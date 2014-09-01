@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orderingFromXml="true"
+    android:title="Configuración" >
+
+    <PreferenceCategory
+        android:orderingFromXml="true"
+        android:title="Registro" >
+        
+        <EditTextPreference
+            android:dialogTitle="Nombre"
+            android:key="pref_nombre"
+            android:summary="Nombre"
+            android:title="Nombre" />
+        <EditTextPreference
+            android:dialogTitle="Teléfono"
+            android:key="pref_phone"
+            android:summary="Teléfono"
+            android:title="Teléfono" />
+        <EditTextPreference
+            android:dialogTitle="Correo"
+            android:key="pref_email"
+            android:summary="Correo"
+            android:title="Correo" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

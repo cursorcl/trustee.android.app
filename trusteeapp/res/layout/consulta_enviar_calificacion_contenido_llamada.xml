@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:layout_gravity="center_vertical"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginTop="3dp"
+    android:alwaysDrawnWithCache="true"
+    android:background="@drawable/confirm_yesno_feedback"
+    android:baselineAligned="false"
+    android:clickable="false"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:duplicateParentState="false"
+    android:fadingEdge="vertical"
+    android:fitsSystemWindows="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:gravity="bottom|right"
+    android:longClickable="false"
+    android:orientation="horizontal"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:windowAnimationStyle="@android:style/Animation.Translucent"
+    android:windowBackground="@android:color/transparent"
+    android:windowIsTranslucent="true" >
+
+    <LinearLayout
+        android:layout_width="302dp"
+        android:layout_height="110dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_horizontal|fill_vertical"
+            android:layout_marginRight="5dp"
+            android:gravity="right|bottom" >
+
+            <Button
+                android:id="@+id/btnRegistrarConfirm"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Si" />
+
+            <Button
+                android:id="@+id/btnNoConsultaContenidoLlamada"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="No" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

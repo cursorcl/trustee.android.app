@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:dialogMessage="Nombre"
+        android:dialogTitle="Nombre"
+        android:key="pref_name"
+        android:negativeButtonText="Cancelar"
+        android:positiveButtonText="Aceptar"
+        android:summary="Nombre"
+        android:title="Nombre" android:order="1"/>
+    <EditTextPreference
+        android:dialogMessage="Número teléfono (+56912345678)"
+        android:dialogTitle="Teléfono"
+        android:key="pref_phone"
+        android:negativeButtonText="Cancelar"
+        android:order="2"
+        android:positiveButtonText="Aceptar"
+        android:summary="Número teléfono"
+        android:title="Teléfono" />
+    <EditTextPreference
+        android:dialogMessage="Correo electrónico"
+        android:dialogTitle="Correo"
+        android:key="pref_email"
+        android:negativeButtonText="Cancelar"
+        android:order="3"
+        android:positiveButtonText="Aceptar"
+        android:summary="Correo electrónico"
+        android:title="Correo electrónico" />
+
+</PreferenceScreen>

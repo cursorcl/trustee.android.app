@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrlViewConfig"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="5dp"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin" >
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_letters" />
+
+        <ToggleButton
+            android:id="@+id/btnRegisterCalls"
+            android:layout_width="153dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Solicita registrar llamadas"
+            android:textOff="No solicita informar llamadas"
+            android:textOn="Solicita informar llamadas" />
+
+        <ToggleButton
+            android:id="@+id/toggleValidar"
+            android:layout_width="153dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:text="Validar Llamadas"
+            android:textOff="No validando llamadas"
+            android:textOn="Validando llamadas" />
+
+        <ToggleButton
+            android:id="@+id/toggleGuardar"
+            android:layout_width="153dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:text="Guardar Historial"
+            android:textOff="No guardando historial"
+            android:textOn="Guardando historial" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtValidaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtColaboraciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

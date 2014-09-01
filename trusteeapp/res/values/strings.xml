@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrusteeApp</string>
+    <string name="action_settings">Opciones</string>
+    <string name="subject">Visita Trustee</string>
+    <string name="body">trustee@portalbusiness.cl</string>
+    <string name="title_activity_start">TrusteeApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="PREFERENCES">TRUSTEE</string>
+    <string name="title_about">About</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="description_logo">Demo</string>
+    <string name="description_about">About</string>
+    <string name="description_home">Home</string>
+    <string name="description_search">Buscar</string>
+    <string name="welcome">
+<![CDATA[
+	<html>
+	 <head></head>
+	 <body style="text-align:justify;background=#ff7c7ac0;">
+		<b><font color="blue">Bienvenido a TrusteeApp</font></b> <br>
+		<font size="2">
+		Para activar el servicio, debe registrarse como usuario para ser agregado a nuestra base de datos.<br>
+ 		Revisa las condiciones en <a href="http://www.TrusteeApp.com">www.TrusteeApp.com</a>
+ 		</font>
+	 </body>
+	</html>
+	]]>
+    </string>
+    <string name="registrar">Registrar</string>
+
+    <string-array name="menu_items">
+        <item>Configuración</item>
+        <item>Registrar</item>
+        <item>Ver Historial</item>
+        <item>Borrar historial</item>
+        <item>Recomendar</item>
+        <item >Enviar Comentarios</item>
+        <item>¿Cómo funciona?</item>
+        <item>Términos y condiciones</item>
+        
+    </string-array>
+
+    <string name="terminos">
+<![CDATA[
+	<html>
+	 <head></head>
+	 <body style="text-align:justify;background=#ff7c7ac0;">
+		<h1>Términos y Condiciones</h1>
+		<p align=justify>
+		TrusteeApp es un servicio GRATUITO en Chile de validación de llamadas. Nuestra política consiste en brindar un servicio de seguridad  móvil que permita reducir los fraudes telefónicos, validando las llamadas que reciben las personas. De esta manera cuando un usuario reciba una llamada de un número desconocido, podremos decirle si es una llamada de su institución financiera o alguna empresa donde es cliente, por medio de la “Etiqueta de Validación”. El servicio requiere que el teléfono cuente con conexión de datos (wi-fi o plan de datos).
+		En el momento de descargar la Aplicación, se pide un registro a fin de llevar un registro de nuestros usuarios y poder utilizar esta información para ir mejorando el servicio. Además, esporádicamente enviaremos noticias y novedades vía correo electrónico u otro medio a fin de mantenerlos informados. 
+		TrusteeApp no venderá la información de sus usuarios, sin perjuicio de lo anterior, TrusteeApp podrá incorporar publicidad dentro de los e-mail de noticias y novedades, para fines de financiamiento y mantener brindando un servicio gratuito y calidad.
+		TrusteeApp no se hace responsable por el mal uso de la Aplicación, ni por los fraudes telefónicos que no puedan ser evitados. TrusteeApp es un servicio de prevención y excluye de toda responsabilidad a las Empresas Asociadas al servicio. El usuario al descargar la Aplicación, acepta los términos del servicio.
+		</p>
+		<br><br>
+		<h4>TrusteeApp un servicio Gratuito y Eficiente</h4>
+		<br>
+		<p align=justify>
+		Nuestros esfuerzos están enfocados en la calidad del servicio y la satisfacción de nuestros Clientes y Usuarios. Por estos motivos, nos esforzamos en que nuestra App sea liviana y eficiente, de manera de estar presentes en teléfonos de todas las gamas, y poder brindar el servicio a una mayor cantidad de personas. 
+		Además no incorporaremos publicidad no deseada a través de la App, que ponga lento el equipo o que termine perjudicando la fluidez y experiencia del servicio. En lugar de esto, preferiremos enviarte por e-mail las “noticias y novedades” que podrán ser patrocinadas, a fin de contar con un medio más amistoso para los usuarios.
+		</p>
+		<br>
+	 </body>
+	</html>
+	]]>
+    </string>
+
+    <string name="felicitaciones_">Felicitaciones!</string>
+
+</resources>

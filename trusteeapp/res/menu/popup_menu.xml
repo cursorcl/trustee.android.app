@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mnuConfig"
+        android:enabled="true"
+        android:title="Configuración"
+        android:titleCondensed="Config."
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/mnuHowWorks"
+        android:enabled="true"
+        android:title="¿Cómo funciona?"
+        android:titleCondensed="¿Cómo?"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/mnuRegister"
+        android:enabled="true"
+        android:title="Registrar"
+        android:titleCondensed="Registrar"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/mnuVerHistorial"
+        android:enabled="true"
+        android:title="Ver Historial"
+        android:titleCondensed="Ver H."
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/mnuBorarHistorial"
+        android:enabled="true"
+        android:title="Borrar Historial"
+        android:titleCondensed="Borrar H."
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/mnuRecomend"
+        android:enabled="true"
+        android:title="Recomendar"
+        android:titleCondensed="Recomendar"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/mnuConditions"
+        android:enabled="true"
+        android:title="Términos y Condiciones"
+        android:titleCondensed="T. Y C."
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/mnuEnviarComentarios"
+        android:enabled="true"
+        android:title="Enviar Comentarios"
+        android:titleCondensed="Enviar Comentarios"
+        android:visible="true">
+    </item>
+
+</menu>
