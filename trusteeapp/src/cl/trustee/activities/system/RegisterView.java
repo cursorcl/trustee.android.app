@@ -33,8 +33,8 @@ public class RegisterView extends LinearLayout {
 	}
 
 	/**
-	 * Este método nos permitirá asignar los valores a los diferentes
-	 * componéntes gráficos según el objeto que queramos ver.
+	 * Este mÃ©todo nos permitirÃ¡ asignar los valores a los diferentes
+	 * componentes grÃ¡ficos segÃºn el objeto que queramos ver.
 	 * 
 	 * @param rectangulo
 	 */

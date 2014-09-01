@@ -98,7 +98,7 @@ public class CalificaContenidoServicio extends ABaseActivity {
     @Override
     protected void onPostExecute(Boolean result) {
       if (result)
-        Toast.makeText(CalificaContenidoServicio.this, "Gracias por enviar calificación.",
+        Toast.makeText(CalificaContenidoServicio.this, "Gracias por enviar calificaciÃ³n.",
             Toast.LENGTH_SHORT).show();
     }
 

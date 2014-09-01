@@ -46,7 +46,7 @@ public class FrmRegistroDeNumeroDesconocido extends Activity implements OnClickL
     getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title);
     final TextView myTitleText = (TextView) findViewById(R.id.title);
     if (myTitleText != null) {
-      myTitleText.setText("Enviar info. para identificación");
+      myTitleText.setText("Enviar info. para identificaciÃ³n");
     }
 
     Bundle b = getIntent().getExtras();
@@ -85,14 +85,14 @@ public class FrmRegistroDeNumeroDesconocido extends Activity implements OnClickL
       if (response != null && response.httpResponse != null) {
         int statusCode = response.httpResponse.getStatusLine().getStatusCode();
         if (statusCode == HttpStatus.SC_OK) {
-          Toast toast = Toast.makeText(this, "Se ha registrado el número", Toast.LENGTH_SHORT);
+          Toast toast = Toast.makeText(this, "Se ha registrado el nÃºmero", Toast.LENGTH_SHORT);
           toast.show();
         } else if (statusCode == HttpStatus.SC_FORBIDDEN || statusCode == HttpStatus.SC_BAD_REQUEST
             || statusCode == HttpStatus.SC_UNAUTHORIZED) {
-          Toast toast = Toast.makeText(this, "No se ha registrado el número", Toast.LENGTH_SHORT);
+          Toast toast = Toast.makeText(this, "No se ha registrado el nÃºmero", Toast.LENGTH_SHORT);
           toast.show();
         } else {
-          Toast toast = Toast.makeText(this, "No se ha registrado el número", Toast.LENGTH_SHORT);
+          Toast toast = Toast.makeText(this, "No se ha registrado el nÃºmero", Toast.LENGTH_SHORT);
           toast.show();
         }
       }
@@ -103,7 +103,7 @@ public class FrmRegistroDeNumeroDesconocido extends Activity implements OnClickL
   }
 
   /**
-   * Metodo que abrirá dialogo para indicar que se han realizado multiplo de 10 colaboraciones.
+   * Metodo que abrirÃ¡ dialogo para indicar que se han realizado multiplo de 10 colaboraciones.
    * @param context El contexto en el que se esta ejecutando.
    */
   private void notificarDiezColaboraciones() {

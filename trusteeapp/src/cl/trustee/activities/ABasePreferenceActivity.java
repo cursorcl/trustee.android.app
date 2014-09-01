@@ -85,7 +85,7 @@ public class ABasePreferenceActivity extends PreferenceActivity implements OnIte
 			shareIntent.putExtra(android.content.Intent.EXTRA_TITLE, "http://www.trusteeapp.com");
 			shareIntent
 					.putExtra(Intent.EXTRA_TEXT,
-							"TrusteeApp Validador de llamadas, habla con mayor seguridad y evita los fraudes – descarga GRATIS www.trusteeapp.com");
+							"TrusteeApp Validador de llamadas, habla con mayor seguridad y evita los fraudes! Descarga GRATIS www.trusteeapp.com");
 			startActivity(shareIntent);
 		} else {
 			// The application does not exist
@@ -96,7 +96,7 @@ public class ABasePreferenceActivity extends PreferenceActivity implements OnIte
 		sharingIntent.setType("plain/text");
 		sharingIntent
 				.putExtra(android.content.Intent.EXTRA_TEXT,
-						"TrusteeApp Validador de llamadas, habla con mayor seguridad y evita los fraudes – descarga GRATIS www.trusteeapp.com");
+						"TrusteeApp Validador de llamadas, habla con mayor seguridad y evita los fraudes! Descarga GRATIS www.trusteeapp.com");
 		startActivity(Intent.createChooser(sharingIntent, "http://www.trusteeapp.com"));
 
 	}
@@ -181,7 +181,7 @@ public class ABasePreferenceActivity extends PreferenceActivity implements OnIte
 //		params.putString("name", "TrusteeApp");
 //		params.putString("caption", "TrusteeApp Validador de llamadas");
 //		params.putString("description",
-//				"TrusteeApp Validador de llamadas, habla con mayor seguridad y evita los fraudes – descarga GRATIS www.trusteeapp.com");
+//				"TrusteeApp Validador de llamadas, habla con mayor seguridad y evita los fraudes ï¿½ descarga GRATIS www.trusteeapp.com");
 //		params.putString("link", "http://www.trusteeapp.com");
 ////		params.putString("picture", "https://raw.github.com/fbsamples/ios-3.x-howtos/master/Images/iossdk_logo.png");
 //

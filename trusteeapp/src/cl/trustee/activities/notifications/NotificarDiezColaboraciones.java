@@ -64,7 +64,7 @@ public class NotificarDiezColaboraciones extends Activity {
     sharingIntent
         .putExtra(
             android.content.Intent.EXTRA_TEXT,
-            "Yo uso TrusteeApp y combato el #SPAM móvil Únete y habla más seguro! @TrusteeApp - Descarga GRATIS www.trusteeapp.com");
+            "Yo uso TrusteeApp y combato el #SPAM mÃ³vil Ãºnete y habla mÃ¡s seguro! @TrusteeApp - Descarga GRATIS www.trusteeapp.com");
     sharingIntent.putExtra(Intent.EXTRA_TITLE, "TrusteeApp http://www.trusteeapp.com");
     startActivity(Intent.createChooser(sharingIntent, "Share via"));
   }
