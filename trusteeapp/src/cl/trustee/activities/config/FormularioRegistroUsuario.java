@@ -104,16 +104,16 @@ public class FormularioRegistroUsuario extends ABasePreferenceActivity implement
 		SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
 
 		name.setSummary("Nombre:" + preferences.getString(KEY_NAME, ""));
-		email.setSummary("Correo electrÛnico:"
+		email.setSummary("Correo electr√≥nico:"
 				+ preferences.getString(KEY_EMAIL, ""));
-		phone.setSummary("TelÈfono:" + preferences.getString(KEY_PHONE, ""));
+		phone.setSummary("Tel√©fono:" + preferences.getString(KEY_PHONE, ""));
 		preferences.registerOnSharedPreferenceChangeListener(this);
 		
 	}
 
 	private void notifyErrorMailError(String text) {
 		Toast toast = Toast.makeText(this,
-				String.format("Correo electrÛnico %s inv·lido.", text),
+				String.format("Correo electr√≥nico %s inv√°lido.", text),
 				Toast.LENGTH_SHORT);
 		toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
 		toast.show();
@@ -122,9 +122,9 @@ public class FormularioRegistroUsuario extends ABasePreferenceActivity implement
 	public void onSharedPreferenceChanged(SharedPreferences preferences,
 			String key) {
 		name.setSummary("Nombre:" + preferences.getString(KEY_NAME, ""));
-		email.setSummary("Correo electrÛnico:"
+		email.setSummary("Correo electr√≥nico:"
 				+ preferences.getString(KEY_EMAIL, ""));
-		phone.setSummary("TelÈfono:" + preferences.getString(KEY_PHONE, ""));
+		phone.setSummary("Tel√©fono:" + preferences.getString(KEY_PHONE, ""));
 	}
 
 	public final static boolean isValidEmail(CharSequence target) {

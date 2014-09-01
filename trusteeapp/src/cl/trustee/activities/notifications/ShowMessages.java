@@ -67,9 +67,9 @@ public class ShowMessages extends Activity {
 		Integer iconId = register.getStatus().getResource();
 		String txtDescription = register.getDescription();
 		if (txtDescription == null) {
-			txtDescription = "Número desconocido";
+			txtDescription = "NÃºmero desconocido";
 		}
-		txtNumber.setText("N°:" + number);
+		txtNumber.setText("No:" + number);
 		txtName.setText(txtDescription);
 		image.setImageDrawable(getResources().getDrawable(iconId));
 

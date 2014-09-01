@@ -322,14 +322,14 @@ public class PhoneInterceptor extends BroadcastReceiver {
 
       } else if (statusCode == HttpStatus.SC_FORBIDDEN || statusCode == HttpStatus.SC_BAD_REQUEST
           || statusCode == HttpStatus.SC_UNAUTHORIZED) {
-        PhoneInterceptor.register.setDescription("Sin conexión");
+        PhoneInterceptor.register.setDescription("Sin conexiï¿½n");
         PhoneInterceptor.register.setStatus(EStatusConection.NO_CONECTION);
       } else {
-        PhoneInterceptor.register.setDescription("Número desconocido");
+        PhoneInterceptor.register.setDescription("NÃºmero desconocido");
         PhoneInterceptor.register.setStatus(EStatusConection.UNSAFE);
       }
     } else {
-      PhoneInterceptor.register.setDescription("Sin conexión");
+      PhoneInterceptor.register.setDescription("Sin conexiï¿½n");
       PhoneInterceptor.register.setStatus(EStatusConection.NO_CONECTION);
     }
     return founded;
