@@ -69,7 +69,7 @@ public class ShowMessages extends Activity {
 		if (txtDescription == null) {
 			txtDescription = "Número desconocido";
 		}
-		txtNumber.setText("No:" + number);
+		txtNumber.setText("Nº:" + number);
 		txtName.setText(txtDescription);
 		image.setImageDrawable(getResources().getDrawable(iconId));
 

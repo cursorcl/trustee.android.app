@@ -22,6 +22,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import cl.trustee.R;
+import cl.trustee.activities.config.FormularioRegistroUsuario;
 import cl.trustee.activities.notifications.NotificarDiezColaboraciones;
 import cl.trustee.enums.EPreferences;
 import cl.trustee.rest.RestClient;
@@ -34,6 +35,7 @@ public class FrmRegistroDeNumeroDesconocido extends Activity implements OnClickL
   private TextView txtNumero;
   private Button btnCancelar;
   private Button btnRegistrar;
+  private String email;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,8 @@ public class FrmRegistroDeNumeroDesconocido extends Activity implements OnClickL
       myTitleText.setText("Enviar info. para identificación");
     }
 
+    SharedPreferences lpreferences = PreferenceManager.getDefaultSharedPreferences(this);
+    email = lpreferences.getString(FormularioRegistroUsuario.KEY_EMAIL, "");
     Bundle b = getIntent().getExtras();
     String numero = (String) b.get("NUMERO");
 
@@ -72,6 +76,7 @@ public class FrmRegistroDeNumeroDesconocido extends Activity implements OnClickL
       List<NameValuePair> params = new ArrayList<NameValuePair>();
       params.add(new BasicNameValuePair("nombre", edtNombre.getText().toString()));
       params.add(new BasicNameValuePair("numero", txtNumero.getText().toString()));
+      params.add(new BasicNameValuePair("email", email));
       RadioButton selectRadio = (RadioButton) findViewById(radioEmpresa.getCheckedRadioButtonId());
 
       String selection = selectRadio.getText().toString();

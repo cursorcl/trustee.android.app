@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cl.trustee"
-    android:versionCode="6"
-    android:versionName="6.1.18082014" >
+    android:versionCode="5"
+    android:versionName="5.1.03092014" >
 
     <uses-sdk
         android:minSdkVersion="8"

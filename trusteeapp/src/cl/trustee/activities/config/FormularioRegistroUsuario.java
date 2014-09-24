@@ -73,8 +73,8 @@ public class FormularioRegistroUsuario extends ABasePreferenceActivity implement
 					params.add(new BasicNameValuePair("email", email.getText()));
 					params.add(new BasicNameValuePair("name", name.getText()));
 					params.add(new BasicNameValuePair("number", phone.getText()));
-					params.add(new BasicNameValuePair("os", getSOVersion()));
-					params.add(new BasicNameValuePair("device", getDeviceName()));
+//					params.add(new BasicNameValuePair("os", getSOVersion()));
+//					params.add(new BasicNameValuePair("device", getDeviceName()));
 
 					Toast toast = Toast.makeText(FormularioRegistroUsuario.this,
 							"Gracias por activar TrusteeApp.",

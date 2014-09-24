@@ -198,7 +198,7 @@ public class PhoneInterceptor extends BroadcastReceiver {
         } else {
           timeStarted = 0;
         }
-        updateTimeOfRegister(context);
+        //updateTimeOfRegister(context);
         if (register.getStatus().equals(EStatusConection.UNSAFE) && registerCalls) {
           consultaAgregaEmpresa(context);
         } else if (register.getStatus().equals(EStatusConection.SAFE) && timeStarted > 0) {
