@@ -68,13 +68,6 @@ public class ABasePreferenceActivity extends PreferenceActivity implements OnIte
 	private void recommend() {
 
 		String twitter = "com.twitter.android";
-
-		final PackageManager pm = getPackageManager();
-		List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
-		for (ApplicationInfo packageInfo : packages) {
-			Log.d("TAG", "Installed package : " + packageInfo.packageName);
-		}
-
 		Intent intent = getBaseContext().getPackageManager().getLaunchIntentForPackage(twitter);
 		if (intent != null) {
 			// The application exists
