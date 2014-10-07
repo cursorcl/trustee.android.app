@@ -153,7 +153,10 @@ public class PhoneInterceptor extends BroadcastReceiver {
               mIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
               mIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
               mIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-              mIntent.putExtras(mIntent);
+              //mIntent.putExtras(mIntent);
+              Bundle bundle = new Bundle();
+              bundle.putSerializable(EAttributes.PHONE.name(), PhoneInterceptor.register.getNumber());
+              mIntent.putExtras(bundle);
               context.startActivity(mIntent);
             }
           };
