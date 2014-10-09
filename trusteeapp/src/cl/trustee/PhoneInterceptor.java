@@ -100,12 +100,11 @@ public class PhoneInterceptor extends BroadcastReceiver {
     email = lpreferences.getString(FormularioRegistroUsuario.KEY_EMAIL, "");
 
     selfPhoneNumber = getSelfPhoneNumber(context);
-    
-    if(incommingPhoneNumber == null || incommingPhoneNumber.trim().equals(""))
-    {
+
+    if (incommingPhoneNumber == null || incommingPhoneNumber.trim().equals("")) {
       PhoneInterceptor.register.setNumber("=======1");
     }
-    
+
     PhoneInterceptor.idRegistro = findOnNetPut(context, incommingPhoneNumber);
     if (history) {
       DBTrustee.getInstance(context.getApplicationContext()).addToLog(register);
@@ -153,9 +152,10 @@ public class PhoneInterceptor extends BroadcastReceiver {
               mIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
               mIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
               mIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-              //mIntent.putExtras(mIntent);
+              // mIntent.putExtras(mIntent);
               Bundle bundle = new Bundle();
-              bundle.putSerializable(EAttributes.PHONE.name(), PhoneInterceptor.register.getNumber());
+              bundle.putSerializable(EAttributes.PHONE.name(),
+                  PhoneInterceptor.register.getNumber());
               mIntent.putExtras(bundle);
               context.startActivity(mIntent);
             }
@@ -170,8 +170,8 @@ public class PhoneInterceptor extends BroadcastReceiver {
               newIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
               newIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
               newIntent.addCategory(Intent.CATEGORY_HOME);
-              
-              
+
+
               Bundle bundle = new Bundle();
               bundle.putSerializable(EAttributes.REGISTER.name(), PhoneInterceptor.register);
               newIntent.putExtras(bundle);
@@ -201,7 +201,7 @@ public class PhoneInterceptor extends BroadcastReceiver {
         } else {
           timeStarted = 0;
         }
-        //updateTimeOfRegister(context);
+        // updateTimeOfRegister(context);
         if (register.getStatus().equals(EStatusConection.UNSAFE) && registerCalls) {
           consultaAgregaEmpresa(context);
         } else if (register.getStatus().equals(EStatusConection.SAFE) && timeStarted > 0) {
@@ -285,7 +285,9 @@ public class PhoneInterceptor extends BroadcastReceiver {
     List<NameValuePair> params = new ArrayList<NameValuePair>();
     params.add(new BasicNameValuePair("id", selfPhoneNumber));
     params.add(new BasicNameValuePair("number", new String(number)));
-    params.add(new BasicNameValuePair("email", email));
+    if (email != null && !"".equals(email.trim())) {
+      params.add(new BasicNameValuePair("email", email));
+    }
 
     String url = "http://www.trusteeapp.com/trustee/index.php/api/empresas";
     TrusteeResponse response = restClient.executePost(url, params);
