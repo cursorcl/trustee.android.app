@@ -83,16 +83,17 @@ public class NotificarEnviandoInformacionValidar extends Activity {
 			}
 		});
 		inscribe();
-		seconds = 4;
+		seconds = 6;
 		txtTimer.setText(String.format("%d", seconds));
-		t.schedule(new TimerTask() {
+		t.scheduleAtFixedRate(new TimerTask() {
 			public void run() {
 				runOnUiThread(new Runnable() {
 					@Override
 					public void run() {
-						txtTimer.setText(String.format("%d", seconds--));
+						txtTimer.setText(String.format("%d", seconds));
 					}
 				});
+				seconds--;
 				if (seconds == 0) {
 					t.cancel();
 
@@ -103,7 +104,7 @@ public class NotificarEnviandoInformacionValidar extends Activity {
 				}
 
 			}
-		}, 1000);
+		},0,  1000);
 	}
 
 	@Override
