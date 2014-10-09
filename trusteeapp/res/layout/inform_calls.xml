@@ -83,13 +83,16 @@
         android:id="@+id/txtNroPropio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Su curreo electrónico."
+        android:layout_marginLeft="10dp"
+        android:text="e-mail de usuario:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/edtRegistroTemporalEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:ems="10"
         android:inputType="textEmailAddress" />
 

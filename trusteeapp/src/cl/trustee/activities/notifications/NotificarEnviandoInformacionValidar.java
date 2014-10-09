@@ -66,7 +66,7 @@ public class NotificarEnviandoInformacionValidar extends Activity {
 
 		txtNroEntrante.setText("Nº Entrante:" + incomming);
 		txtNroPropio.setText("Nº Propio:" + ownPhone);
-		txtEmailNotifica.setText("Correo:" + email);
+		txtEmailNotifica.setText("Usuario:" + email);
 
 		txtTimer = (TextView) findViewById(R.id.txtTimer);
 
