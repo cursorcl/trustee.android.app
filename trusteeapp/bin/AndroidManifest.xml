@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cl.trustee"
-    android:versionCode="5"
-    android:versionName="5.1.03092014" >
+    package="cl.trusteeapp"
+    android:versionCode="1"
+    android:versionName="1.1.12102014" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -27,7 +27,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <receiver
-            android:name="cl.trustee.PhoneInterceptor"
+            android:name="cl.trusteeapp.PhoneInterceptor"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
@@ -41,7 +41,7 @@
         </receiver>
 
         <activity
-            android:name="cl.trustee.activities.ActividadInicial"
+            android:name="cl.trusteeapp.activities.ActividadInicial"
             android:icon="@drawable/logo"
             android:label="@string/title_activity_start"
             android:theme="@style/Theme.Transparent" >
@@ -52,22 +52,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="cl.trustee.activities.system.About"
+            android:name="cl.trusteeapp.activities.system.About"
             android:icon="@drawable/logo"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="cl.trustee.activities.system.FrmRegistroDeNumeroDesconocido"
+            android:name="cl.trusteeapp.activities.system.FrmRegistroDeNumeroDesconocido"
             android:icon="@drawable/logo"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="cl.trustee.activities.system.Historial"
+            android:name="cl.trusteeapp.activities.system.Historial"
             android:icon="@drawable/logo"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="cl.trustee.activities.system.SetupTrustee"
+            android:name="cl.trusteeapp.activities.system.SetupTrustee"
             android:icon="@drawable/logo"
             android:label="@string/app_name" >
         </activity>
@@ -77,54 +77,54 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="cl.trustee.activities.config.FormularioRegistroCondiciones"
+            android:name="cl.trusteeapp.activities.config.FormularioRegistroCondiciones"
             android:icon="@drawable/logo"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="cl.trustee.activities.config.FormularioRegistroUsuario"
+            android:name="cl.trusteeapp.activities.config.FormularioRegistroUsuario"
             android:icon="@drawable/logo"
             android:label="@string/app_name" >
         </activity>
         
-        <activity android:name="cl.trustee.activities.formularios.CalificaContenidoLlamada" 
+        <activity android:name="cl.trusteeapp.activities.formularios.CalificaContenidoLlamada" 
             android:icon="@drawable/logo"
             android:label="@string/app_name" >
         </activity>
-        <activity android:name="cl.trustee.activities.formularios.CalificaContenidoServicio" 
+        <activity android:name="cl.trusteeapp.activities.formularios.CalificaContenidoServicio" 
             android:icon="@drawable/logo"
             android:label="@string/app_name" >
         </activity>
         
         
-        <activity android:name="cl.trustee.activities.notifications.ConsultaEnviarCalificacionContenidoLlamada" 
+        <activity android:name="cl.trusteeapp.activities.notifications.ConsultaEnviarCalificacionContenidoLlamada" 
             android:icon="@drawable/logo"
             android:theme="@style/Theme.Transparent"
             android:label="@string/app_name" >
         </activity>
-        <activity android:name="cl.trustee.activities.notifications.ConsultaEnvioInformacionNumero" 
+        <activity android:name="cl.trusteeapp.activities.notifications.ConsultaEnvioInformacionNumero" 
             android:icon="@drawable/logo"
             android:theme="@style/Theme.Transparent"
             android:label="@string/app_name" >
         </activity>
-        <activity android:name="cl.trustee.activities.notifications.NotificarDiezColaboraciones" 
+        <activity android:name="cl.trusteeapp.activities.notifications.NotificarDiezColaboraciones" 
             android:theme="@style/Theme.Transparent"
 		 >
         </activity>
-        <activity android:name="cl.trustee.activities.notifications.NotificarDiezValidaciones" 
+        <activity android:name="cl.trusteeapp.activities.notifications.NotificarDiezValidaciones" 
             android:icon="@drawable/logo"
             android:theme="@style/Theme.Transparent">
         </activity>
-        <activity android:name="cl.trustee.activities.notifications.NotificarEnviandoInformacionValidar" 
+        <activity android:name="cl.trusteeapp.activities.notifications.NotificarEnviandoInformacionValidar" 
             android:icon="@drawable/logo"
             android:theme="@style/Theme.Transparent">
         </activity>
         <activity
-            android:name="cl.trustee.activities.notifications.ShowMessages"
+            android:name="cl.trusteeapp.activities.notifications.ShowMessages"
             android:icon="@drawable/logo"
             android:theme="@style/Theme.Transparent">
         </activity>
-        <activity android:name="cl.trustee.activities.ABaseActivity" />
+        <activity android:name="cl.trusteeapp.activities.ABaseActivity" />
     </application>
 
 </manifest>
