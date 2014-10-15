@@ -86,7 +86,7 @@
             android:focusableInTouchMode="false"
             android:freezesText="false"
             android:includeFontPadding="false"
-            android:text="Cancelar"
+            android:text="Enviar"
             android:textColor="@color/foreground2"
             android:textSize="@dimen/text_size_small"
             android:typeface="normal" />
