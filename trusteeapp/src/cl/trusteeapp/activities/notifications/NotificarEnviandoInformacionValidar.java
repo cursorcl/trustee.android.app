@@ -69,16 +69,15 @@ public class NotificarEnviandoInformacionValidar extends Activity {
 
 		txtTimer = (TextView) findViewById(R.id.txtTimer);
 
-		Button btnCancelAhoraEnviar = (Button) findViewById(R.id.btnCancel);
-		btnCancelAhoraEnviar.setOnClickListener(new OnClickListener() {
+		Button btnCancel = (Button) findViewById(R.id.btnCancel);
+		btnCancel.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
               t.cancel();
-
-              NotificarEnviandoInformacionValidar.this.finish();
+              finish();
               Intent local = new Intent();
-              local.setAction(EBroadcast.ACCEPT.toString());
+              local.setAction(EBroadcast.CANCEL.toString());
               sendBroadcast(local);
 			}
 		});
@@ -97,8 +96,9 @@ public class NotificarEnviandoInformacionValidar extends Activity {
 				if (seconds == 0) {
 	                t.cancel();
 	                finish();
+	                NotificarEnviandoInformacionValidar.this.finish();
 	                Intent local = new Intent();
-	                local.setAction(EBroadcast.CANCEL.toString());
+	                local.setAction(EBroadcast.ACCEPT.toString());
 	                sendBroadcast(local);
 				}
 
